@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tugas dan Fungsi — UPT Perlindungan Perempuan dan Anak Kota Palembang</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="custom.css" />
+</head>
+<body>
+  <div id="navbar-root"></div>
+  <header class="page-header">
+    <div class="upt-container page-header-inner">
+      <h1>TUGAS DAN FUNGSI UPT</h1>
+      <nav class="breadcrumb"><a href="index.html">Beranda</a> <i class="fa-solid fa-chevron-right"></i> <a href="profil.html">Profil</a> <i class="fa-solid fa-chevron-right"></i> Tugas &amp; Fungsi</nav>
+    </div>
+  </header>
+  <main class="page-body">
+    <div class="upt-container">
+      <p class="page-intro">Uraian berikut merangkum fungsi pelayanan UPT secara ringkas agar mudah dibaca masyarakat. Rincian resmi sesuai dokumen kelembagaan akan dilengkapi pada placeholder di bawah.</p>
+
+      <h2 class="section-title title-underline mb-3">Tugas pokok</h2>
+      <div class="grid-2 mb-4">
+        <article class="card card-body">
+          <div class="misi-num">01</div>
+          <h3 class="layanan-card-title">Pelayanan pengaduan</h3>
+          <p class="layanan-card-desc">Menerima dan menindaklanjuti pengaduan terkait perlindungan perempuan dan anak.</p>
+        </article>
+        <article class="card card-body">
+          <div class="misi-num">02</div>
+          <h3 class="layanan-card-title">Pendampingan korban</h3>
+          <p class="layanan-card-desc">Memberikan pendampingan sesuai kebutuhan hasil asesmen.</p>
+        </article>
+        <article class="card card-body">
+          <div class="misi-num">03</div>
+          <h3 class="layanan-card-title">Perlindungan dan rujukan</h3>
+          <p class="layanan-card-desc">Memfasilitasi perlindungan sementara dan rujukan ke instansi terkait.</p>
+        </article>
+        <article class="card card-body">
+          <div class="misi-num">04</div>
+          <h3 class="layanan-card-title">Edukasi masyarakat</h3>
+          <p class="layanan-card-desc">Menyampaikan informasi pencegahan kekerasan dan hak perempuan serta anak.</p>
+        </article>
+      </div>
+
+      <h2 class="section-title title-underline mb-3">Fungsi</h2>
+      <ol class="info-list mb-4">
+        <li><i class="fa-solid fa-1"></i><span>Penerimaan laporan dan pengaduan.</span></li>
+        <li><i class="fa-solid fa-2"></i><span>Verifikasi informasi dan asesmen kasus.</span></li>
+        <li><i class="fa-solid fa-3"></i><span>Pendampingan psikososial, administratif, dan/atau hukum sesuai kewenangan.</span></li>
+        <li><i class="fa-solid fa-4"></i><span>Koordinasi penanganan dengan instansi lain.</span></li>
+        <li><i class="fa-solid fa-5"></i><span>Dokumentasi kasus secara rahasia.</span></li>
+        <li><i class="fa-solid fa-6"></i><span>Pemantauan tindak lanjut layanan.</span></li>
+      </ol>
+
+      <h2 class="section-title title-underline mb-3">Catatan dokumen resmi</h2>
+      <div class="faq-list" id="tugas-acc">
+        <div class="faq-item">
+          <button class="faq-question" type="button">Dokumen tugas dan fungsi UPT <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span></button>
+          <div class="faq-answer"><p>[Tugas dan fungsi sesuai dokumen resmi UPT — akan dilengkapi]. Gunakan naskah dari peraturan atau keputusan pembentukan, bukan ringkasan tidak resmi.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" type="button">Batas kewenangan <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span></button>
+          <div class="faq-answer"><p>UPT bekerja sesuai kewenangan unit pelayanan teknis. Penegakan hukum dilakukan oleh instansi yang berwenang. UPT mendampingi dan merujuk sesuai kebutuhan korban.</p></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div id="footer-root"></div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/site-data.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/pages.js"></script>
+  <script>
+    document.querySelectorAll('#tugas-acc .faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.classList.toggle('open');
+        btn.nextElementSibling.classList.toggle('open');
+      });
+    });
+  </script>
+</body>
+</html>
